@@ -1,0 +1,78 @@
+/* Cyberpunk background with scanlines */
+.cyberpunk-bg {
+  background-color: #0a0a12;
+  background-image: 
+    linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* CRT screen effect */
+.cyberpunk-bg::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Cyberpunk input styling */
+.cyberpunk-input {
+  background: rgba(10, 10, 18, 0.8);
+  border: 1px solid #ff00ff;
+  color: #00f0ff;
+  padding: 0.5rem;
+  font-family: monospace;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.cyberpunk-input:focus {
+  box-shadow: 0 0 10px #ff00ff;
+  border-color: #00f0ff;
+}
+
+/* Neon button styles */
+.cyberpunk-button {
+  background: transparent;
+  border: 1px solid #ff00ff;
+  color: #ff00ff;
+  padding: 0.5rem 1rem;
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.cyberpunk-button:hover {
+  box-shadow: 0 0 15px #ff00ff;
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
+.cyberpunk-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 0, 255, 0.4), transparent);
+  transition: all 0.5s;
+}
+
+.cyberpunk-button:hover::before {
+  left: 100%;
+}

@@ -1,4 +1,6 @@
 // CyberpunkBootSequence.jsx
+import { useState, useEffect } from 'react'; 
+
 export default function CyberpunkBootSequence({ onComplete }) {
   const [text, setText] = useState('');
   const lines = [

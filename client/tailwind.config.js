@@ -1,4 +1,8 @@
 module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}", // Add all file extensions you're using
+  ],
   theme: {
     extend: {
       colors: {
@@ -28,5 +32,6 @@ module.exports = {
         }
       }
     }
-  }
+  },
+  plugins: [],
 }

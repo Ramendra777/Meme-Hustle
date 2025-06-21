@@ -1,0 +1,6 @@
+@keyframes glitch {
+  0% { text-shadow: 0.05em 0 0 #ff00ff, -0.05em -0.025em 0 #00f0ff; }
+  14% { text-shadow: 0.05em 0 0 #ff00ff, -0.05em -0.025em 0 #00f0ff; }
+  15% { text-shadow: -0.05em -0.025em 0 #ff00ff, 0.025em 0.025em 0 #00f0ff; }
+  /* ... rest of the animation ... */
+}

@@ -1,4 +1,7 @@
 // BidButton.jsx
+import { useState } from 'react';
+import { useSocket } from '../contexts/SocketContext'; 
+
 export default function BidButton({ memeId }) {
   const [bidAmount, setBidAmount] = useState(100);
   const [showBidInput, setShowBidInput] = useState(false);

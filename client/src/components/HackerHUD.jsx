@@ -1,4 +1,6 @@
 // HackerHUD.jsx
+import { useState } from 'react';
+
 export default function HackerHUD() {
   const [stats, setStats] = useState({
     usersOnline: Math.floor(Math.random() * 1000),

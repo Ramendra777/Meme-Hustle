@@ -1,4 +1,6 @@
 // CyberpunkMemeForm.jsx
+import { useState } from 'react';
+
 export default function CyberpunkMemeForm({ onSubmit }) {
   const [title, setTitle] = useState('');
   const [imageUrl, setImageUrl] = useState('');

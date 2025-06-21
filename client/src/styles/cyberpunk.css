@@ -76,3 +76,20 @@
 .cyberpunk-button:hover::before {
   left: 100%;
 }
+
+.cyberpunk-hardware-panel {
+  font-family: 'Courier New', monospace;
+  background: rgba(0, 0, 0, 0.7);
+  border-left: 3px solid #00f0ff;
+}
+
+.meter {
+  height: 4px;
+  background: #111;
+}
+
+.meter-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ff00ff, #00f0ff);
+  animation: pulse 2s infinite;
+}
